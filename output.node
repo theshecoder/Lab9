@@ -3,23 +3,10 @@ nohup: ignoring input
 > comment@0.0.0 start /home/bitnami/comment
 > node ./bin/www
 
-[0mGET / [36m304 [0m120.561 ms - -[0m
-[0mGET /javascripts/app.js [36m304 [0m123.722 ms - -[0m
-[0mGET /comments [32m200 [0m412.473 ms - 432[0m
-[0mGET / [36m304 [0m0.501 ms - -[0m
-[0mGET /javascripts/app.js [36m304 [0m0.489 ms - -[0m
-[0mGET /comments [36m304 [0m81.129 ms - -[0m
-[0mGET /comments [36m304 [0m79.679 ms - -[0m
-[0mGET /favicon.ico [33m404 [0m8468.648 ms - 1578[0m
-[0mGET / [36m304 [0m0.389 ms - -[0m
-[0mGET /javascripts/app.js [36m304 [0m0.353 ms - -[0m
-[0mGET /comments [36m304 [0m2.398 ms - -[0m
-[0mGET /favicon.ico [33m404 [0m939.227 ms - 1578[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m285.536 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m41.245 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m3.358 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m125.687 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m2.548 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m80.408 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m2.954 ms - 96[0m
-[0mPUT /comments/56ec3da8b7843c7a0e54f5ab/upvote [32m200 [0m40.417 ms - 97[0m
+[0mGET / [36m304 [0m321.184 ms - -[0m
+[0mGET / [32m200 [0m81.061 ms - 1003[0m
+[0mGET /javascripts/app.js [36m304 [0m1.302 ms - -[0m
+[0mGET /comments [32m200 [0m371.173 ms - 856[0m
+[0mPUT /comments/56f069734adae2ae312bdd5d/upvote [32m200 [0m404.566 ms - 172[0m
+[0mPUT /comments/56f069734adae2ae312bdd5d/upvote [32m200 [0m81.638 ms - 172[0m
+[0mPOST /comments [32m200 [0m568.986 ms - 76[0m

@@ -4,11 +4,11 @@ angular.module('comment', [])
   function($scope,$http){
     $scope.test = 'Hello world!';
     $scope.comments = [
-      {title:'Comment 1', upvotes:5},
-      {title:'Comment 2', upvotes:6},
-      {title:'Comment 3', upvotes:1},
-      {title:'Comment 4', upvotes:4},
-      {title:'Comment 5', upvotes:3}
+      {title:'Comment 1', upvotes:5, photo: 'https://s-media-cache-ak0.pinimg.com/736x/e7/cf/f3/e7cff3be614f68782386bfbeecb304b1.jpg'},
+      {title:'Comment 2', upvotes:6, photo: 'https://s-media-cache-ak0.pinimg.com/736x/e7/cf/f3/e7cff3be614f68782386bfbeecb304b1.jpg'},
+      {title:'Comment 3', upvotes:1, photo: 'https://s-media-cache-ak0.pinimg.com/736x/e7/cf/f3/e7cff3be614f68782386bfbeecb304b1.jpg'},
+      {title:'Comment 4', upvotes:4, photo: 'https://s-media-cache-ak0.pinimg.com/736x/e7/cf/f3/e7cff3be614f68782386bfbeecb304b1.jpg'},
+      {title:'Comment 5', upvotes:3, photo: 'https://s-media-cache-ak0.pinimg.com/736x/e7/cf/f3/e7cff3be614f68782386bfbeecb304b1.jpg'}
     ];
     $scope.create = function(comment) {
     return $http.post('/comments', comment).success(function(data){
@@ -16,8 +16,9 @@ angular.module('comment', [])
     });
   };
     $scope.addComment = function() {
-      $scope.create({title:$scope.formContent,upvotes:0});
+      $scope.create({title:$scope.formContent,upvotes:0,photo:$scope.photoContent});
       $scope.formContent='';
+	  $scope.photoContent='';
     };
     $scope.upvote = function(comment) {
       return $http.put('/comments/' + comment._id + '/upvote')
